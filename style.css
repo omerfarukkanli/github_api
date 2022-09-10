@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: #2a303c;
+}
+html {
+  height: 100%;
+}
+.container {
+  margin: auto 15%;
+}
+.container .header {
+  margin: 0 1rem;
+  padding: 2rem;
+}
+.container .header h1 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.5em;
+  color: #3abff8;
+  text-shadow: 0 0 2px #3abff8;
+}
+.container .header .github-seach {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.container .header .github-seach input {
+  background: transparent;
+  padding: 1rem;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-right: 1rem;
+  color: #fff;
+  width: 60%;
+}
+.container .header .github-seach button {
+  padding: 1rem;
+  color: #191d24;
+  font-size: 1em;
+  font-weight: 600;
+  background: #3abff8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .github-user {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .github-user .photo img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.container .github-user .info {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .github-user .info .github-info {
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #fff;
+  padding: 0.5rem;
+  color: #3abff8;
+}
+.container .github-user .info .github-info label {
+  margin-left: 5px;
+  background: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  color: #191d24;
+}
+.container .github-user .info .user-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  color: #fff;
+}
+.container .github-user .info .user-info span {
+  margin-bottom: 1rem;
+}
+@media (max-width: 900px) {
+  .header h1 {
+    font-size: 1em !important;
+  }
+  .container .github-user {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0 !important;
+  }
+  .github-user .info {
+    margin-top: 2rem;
+    padding: 0;
+    margin-left: 0 !important;
+    align-items: center;
+  }
+  .github-info {
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.error {
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+  font-size: 2em;
+  background: #f87272;
+  border-radius: 10px;
+  color: red;
+  font-weight: 800;
+}
